@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moradores de Hawkins - Gerador de personagens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-mundo="real">
+  <header>
+    <h1>Moradores de Hawkins</h1>
+    <p id="grupo"></p>
+    <button id="mundo" aria-pressed="false">Entrar no Mundo Invertido</button>
+  </header>
+
+  <main>
+    <section class="acoes">
+      <p>Sorteie um morador de Hawkins, Indiana, 1984.</p>
+      <button id="gerar" class="principal">Gerar personagem</button>
+    </section>
+
+    <section id="resultado" aria-live="polite">
+      <div id="ficha">
+        <p class="vazio">Clique em Gerar personagem para conhecer alguém da cidade.</p>
+      </div>
+
+      <div id="senhaBox" hidden>
+        <h3>Senha secreta do personagem</h3>
+        <output id="senha"></output>
+        <label>Tamanho: <span id="tam">12</span>
+          <input type="range" id="tamanho" min="6" max="24" value="12">
+        </label>
+        <label><input type="checkbox" id="simbolos" checked> Incluir símbolos</label>
+        <div class="botoes">
+          <button id="novaSenha">Nova senha</button>
+          <button id="copiar">Copiar senha</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape"></footer>
+  <script src="script.js"></script>
+</body>
+</html>
